@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 15px;
+    opacity: 80%;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+nav {
+    display: flex;
+    margin: 10px;
+    opacity: 80%;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 30px;
+}
+.contact-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 25px;
+    font-weight: lighter;
+    opacity: 70%;
+}
+
+.contact-section p {
+    margin-top: 40px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.check-image  {
+    margin-top: 70px;
+    width: 50px;
+    height: 50px;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texts h3 {
+    margin-top: 80px;
+}
+
+.texts .text2 {
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 70%;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.about-box {
+    display: block;
+    background-color: white;
+    padding: 20px;
+    margin: 80px;
+    text-align: center;
+}
+
+.about-box h3 {
+    font-size: 18px;
+}
+
+.about-box p {
+    font-size: 18px;
+    line-height: 1.5;
+    opacity: 80%;
+}
+a.email-link {
+    color: black;
+    opacity: 70%;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.copyright-text {
+    margin-bottom: 10px;
+}
+
+.footer-links-container {
+    text-align: center; 
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease; 
+}
+
+.footer-link:hover {
+    color: #fff; 
+}

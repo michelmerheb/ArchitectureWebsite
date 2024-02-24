@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 15px;
+    opacity: 80%;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+nav {
+    display: flex;
+    margin: 10px;
+    opacity: 80%;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 30px;
+}
+.privacy-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.privacy-section h2 {
+    font-size: 25px;
+    font-weight: lighter;
+    opacity: 70%;
+}
+
+.privacy-section p {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.8;
+    font-weight: lighter;
+    opacity: 70%;
+}
+
+a.email-link {
+    color: black;
+    opacity: 70%;
+}
+
+footer {
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.copyright-text {
+    margin-bottom: 10px;
+}
+
+.footer-links-container {
+    text-align: center; 
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease; 
+}
+
+.footer-link:hover {
+    color: #fff; 
+}
