@@ -58,7 +58,14 @@ p {
     margin-bottom: 30px;
 }
 
+.logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
 
+.logo-container img {
+    cursor: pointer;
+}
 
 </style>
 
@@ -303,14 +310,14 @@ p {
 
   <div class="logo-container">
     <div class="logo-text">LINEAM</div>
-    <img src="./images/logo.webp" alt="LINEAR Logo">
+    <img src="./images/logo.webp" alt="LINEAR Logo" onclick="scrollToTop()">
     
   </div>
 
 
 <footer>
   <div class="copyright-text">
-      COPYRIGHT © 2023 LINEAM DESIGN - ALL RIGHTS RESERVED.
+      COPYRIGHT © 2024 LINEAM DESIGN - ALL RIGHTS RESERVED.
   </div>
   <div class="footer-links-container">
       <a href="Gallery.html" class="footer-link">Gallery</a>
@@ -322,7 +329,6 @@ p {
   let slideIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
   let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9", "mySlides10", "mySlides11", "mySlides12", "mySlides13", "mySlides14", "mySlides15"];
 
-  // Initial setup
   showSlides(1, 0);
   showSlides(1, 1);
   showSlides(1, 2);
@@ -339,7 +345,6 @@ p {
   showSlides(1, 13);
   showSlides(1, 14);
 
-  // Auto slide every 2 seconds
   let slideInterval = setInterval(function () {
     for (let i = 0; i < slideId.length; i++) {
       plusSlides(1, i);
@@ -347,13 +352,9 @@ p {
   }, 2000);
 
   function plusSlides(n, no) {
-    // Clear the interval
-    clearInterval(slideInterval);
-    
-    // Move to the next slide
+    clearInterval(slideInterval); 
     showSlides(slideIndex[no] += n, no);
     
-    // Restart the interval
     slideInterval = setInterval(function () {
       for (let i = 0; i < slideId.length; i++) {
         plusSlides(1, i);
@@ -370,6 +371,10 @@ p {
       x[i].style.display = "none";  
     }
     x[slideIndex[no]-1].style.display = "block";  
+  }
+
+  function scrollToTop() {
+    window.scrollTo({top: 0, behavior: "smooth"});
   }
 
 </script>
